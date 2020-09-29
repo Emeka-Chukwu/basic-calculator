@@ -1,16 +1,16 @@
+import 'package:calculator/evaluation_calculating.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:calculator/evaluation_calc.dart';
 
-class MockEvaluation extends Mock implements EvaluationCalc {}
+class MockEvaluation extends Mock implements EvaluationCalculation {}
 
 void main() {
   MockEvaluation mockEvaluation;
-  EvaluationCalc evaluation;
+  EvaluationCalculation evaluation;
 
   setUp(() {
     mockEvaluation = MockEvaluation();
-    evaluation = EvaluationCalc();
+    evaluation = EvaluationCalculation();
   });
   group("Final Evalution of the screen expression", () {
     String case1 = "((4+6)+9x8)";

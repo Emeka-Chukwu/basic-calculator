@@ -1,5 +1,5 @@
 class ButtonExpression {
-  static bool dotTaken = false;
+  bool dotTaken = false;
   static final operands = ["+", "-", "/", "x"];
   static List<int> operandsIndex = [];
   String addOperandToExpression(String operand, String mathsExpression) {
